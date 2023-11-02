@@ -1,4 +1,5 @@
 using PersonalDiary.Models;
+using PersonalDiary.Utils;
 
 namespace PersonalDiary
 {
@@ -9,7 +10,7 @@ namespace PersonalDiary
             InitializeComponent();
         }
 
-        diarylvl10_dbContext context = new diarylvl10_dbContext();
+
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -18,13 +19,21 @@ namespace PersonalDiary
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            Validation validation = new Validation();
+            if (validation.ValidateString(
+                txtUsername.Text
+                , "^[a-z0-9_-]{2,15}$"
+                , "Username"
+                , "Length: 2-15 characters\n" +
+                "Allows containing '_', '-'") &&
+                validation.ValidateString(
+                txtPassword.Text
+                , "^[a-z0-9_-]{2,15}$"
+                , "Password"
+                , "Length: 2-15 characters\n" +
+                "Allows containing '_', '-'"))
             {
-                MessageBox.Show("Please enter username and password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                if (isValidUser(txtUsername.Text, txtPassword.Text))
+                if (Login(txtUsername.Text, txtPassword.Text))
                 {
                     this.Hide();
                     Home home = new Home();
@@ -32,9 +41,16 @@ namespace PersonalDiary
                 }
                 else
                 {
-                    MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Wrong username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignupForm signup = new SignupForm();
+            signup.ShowDialog();
         }
 
         #region Methods
@@ -44,20 +60,18 @@ namespace PersonalDiary
         /// <param name="username">Username of user's account</param>
         /// <param name="password">Password of user's account</param>
         /// <returns>True if exists, otherwise false</returns>
-        private Boolean isValidUser(string username, string password)
+        private Boolean Login(string username, string password)
         {
-            var user = context.Users
-                .FirstOrDefault(item => item.Username == username && item.Password == password);
-
-            return user != null; // If user is found, return true; otherwise, return false
+            using (diarylvl10_dbContext context = new diarylvl10_dbContext())
+            {
+                var user = context.Users
+                                .FirstOrDefault(item => item.Username == username
+                                && item.Password == password);
+                return user != null;
+            }
         }
         #endregion
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SignupForm signup = new SignupForm();
-            signup.ShowDialog();
-        }
+
     }
 }

@@ -56,9 +56,8 @@
             panel3.Controls.Add(button2);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(4, 5, 4, 5);
             panel3.Name = "panel3";
-            panel3.Size = new Size(539, 48);
+            panel3.Size = new Size(377, 29);
             panel3.TabIndex = 13;
             // 
             // button2
@@ -69,10 +68,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.DimGray;
-            button2.Location = new Point(486, 0);
-            button2.Margin = new Padding(4, 5, 4, 5);
+            button2.Location = new Point(340, 0);
             button2.Name = "button2";
-            button2.Size = new Size(53, 48);
+            button2.Size = new Size(37, 29);
             button2.TabIndex = 6;
             button2.Text = "X";
             button2.UseVisualStyleBackColor = false;
@@ -87,20 +85,18 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(btnSignup);
             panel1.Controls.Add(panel4);
-            panel1.Location = new Point(35, 98);
-            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Location = new Point(24, 59);
             panel1.Name = "panel1";
-            panel1.Size = new Size(467, 673);
+            panel1.Size = new Size(327, 404);
             panel1.TabIndex = 12;
             // 
             // panel5
             // 
             panel5.Controls.Add(label6);
             panel5.Controls.Add(txtConfirm);
-            panel5.Location = new Point(4, 340);
-            panel5.Margin = new Padding(4, 5, 4, 5);
+            panel5.Location = new Point(3, 204);
             panel5.Name = "panel5";
-            panel5.Size = new Size(457, 97);
+            panel5.Size = new Size(320, 58);
             panel5.TabIndex = 11;
             // 
             // label6
@@ -108,10 +104,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.LightGray;
-            label6.Location = new Point(-8, 0);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(-3, 0);
             label6.Name = "label6";
-            label6.Size = new Size(278, 45);
+            label6.Size = new Size(189, 30);
             label6.TabIndex = 5;
             label6.Text = "Confirm password";
             // 
@@ -121,21 +116,19 @@
             txtConfirm.BorderStyle = BorderStyle.None;
             txtConfirm.Dock = DockStyle.Bottom;
             txtConfirm.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtConfirm.Location = new Point(0, 59);
-            txtConfirm.Margin = new Padding(4, 5, 4, 5);
+            txtConfirm.Location = new Point(0, 33);
             txtConfirm.Name = "txtConfirm";
             txtConfirm.PasswordChar = '*';
-            txtConfirm.Size = new Size(457, 38);
+            txtConfirm.Size = new Size(320, 25);
             txtConfirm.TabIndex = 3;
             // 
             // panel2
             // 
             panel2.Controls.Add(label3);
             panel2.Controls.Add(txtPassword);
-            panel2.Location = new Point(4, 220);
-            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.Location = new Point(3, 132);
             panel2.Name = "panel2";
-            panel2.Size = new Size(457, 97);
+            panel2.Size = new Size(320, 58);
             panel2.TabIndex = 10;
             // 
             // label3
@@ -143,10 +136,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.LightGray;
-            label3.Location = new Point(-10, 0);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(-4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(153, 45);
+            label3.Size = new Size(103, 30);
             label3.TabIndex = 5;
             label3.Text = "Password";
             // 
@@ -156,11 +148,10 @@
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Dock = DockStyle.Bottom;
             txtPassword.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(0, 59);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.Location = new Point(0, 33);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(457, 38);
+            txtPassword.Size = new Size(320, 25);
             txtPassword.TabIndex = 2;
             // 
             // label1
@@ -168,10 +159,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Gold;
-            label1.Location = new Point(-19, 0);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(-13, 0);
             label1.Name = "label1";
-            label1.Size = new Size(298, 96);
+            label1.Size = new Size(200, 65);
             label1.TabIndex = 1;
             label1.Text = "Sign up";
             // 
@@ -181,10 +171,9 @@
             lbSignin.Cursor = Cursors.Hand;
             lbSignin.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lbSignin.ForeColor = Color.Gold;
-            lbSignin.Location = new Point(311, 576);
-            lbSignin.Margin = new Padding(4, 0, 4, 0);
+            lbSignin.Location = new Point(218, 356);
             lbSignin.Name = "lbSignin";
-            lbSignin.Size = new Size(72, 28);
+            lbSignin.Size = new Size(50, 19);
             lbSignin.TabIndex = 5;
             lbSignin.Text = "Sign in";
             lbSignin.Click += lbSignin_Click;
@@ -194,10 +183,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.LightGray;
-            label2.Location = new Point(69, 576);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(48, 356);
             label2.Name = "label2";
-            label2.Size = new Size(234, 28);
+            label2.Size = new Size(165, 19);
             label2.TabIndex = 8;
             label2.Text = "Already have an account?";
             // 
@@ -208,22 +196,21 @@
             btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnSignup.ForeColor = Color.FromArgb(40, 40, 40);
-            btnSignup.Location = new Point(4, 494);
-            btnSignup.Margin = new Padding(4, 5, 4, 5);
+            btnSignup.Location = new Point(3, 302);
             btnSignup.Name = "btnSignup";
-            btnSignup.Size = new Size(457, 60);
+            btnSignup.Size = new Size(320, 40);
             btnSignup.TabIndex = 4;
             btnSignup.Text = "Sign up";
             btnSignup.UseVisualStyleBackColor = false;
+            btnSignup.Click += btnSignup_Click;
             // 
             // panel4
             // 
             panel4.Controls.Add(label4);
             panel4.Controls.Add(txtUsername);
-            panel4.Location = new Point(4, 101);
-            panel4.Margin = new Padding(4, 5, 4, 5);
+            panel4.Location = new Point(3, 61);
             panel4.Name = "panel4";
-            panel4.Size = new Size(457, 97);
+            panel4.Size = new Size(320, 58);
             panel4.TabIndex = 7;
             // 
             // label4
@@ -231,10 +218,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.LightGray;
-            label4.Location = new Point(-10, 0);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(-4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(163, 45);
+            label4.Size = new Size(111, 30);
             label4.TabIndex = 5;
             label4.Text = "Username";
             // 
@@ -244,21 +230,21 @@
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Dock = DockStyle.Bottom;
             txtUsername.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(0, 59);
-            txtUsername.Margin = new Padding(4, 5, 4, 5);
+            txtUsername.Location = new Point(0, 33);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(457, 38);
+            txtUsername.Size = new Size(320, 25);
             txtUsername.TabIndex = 1;
             // 
             // SignupForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(40, 40, 40);
-            ClientSize = new Size(539, 843);
+            ClientSize = new Size(377, 506);
             Controls.Add(panel3);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "SignupForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignupForm";
